@@ -49,10 +49,12 @@ print("SUPERVISORY LOADS")
 print("=================")
 print_loads()
 
-# Function to find a marker from the pool of staff
+
+# Setup a list to exclude people from second marker
 exclude = []
 
 
+# Function to find a marker from the pool of staff
 def find_marker(supervisor, max_desired_load):
     # shuffle staff to prevent alphabetical surname bias
     surnames = list(staff.keys())
